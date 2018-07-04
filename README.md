@@ -28,3 +28,14 @@ Requires root access and the msr kernel module loaded (just run "modprobe msr" a
 Turns on/off the Q-Code display on ASUS Crosshair VI Hero motherboards (and other boards with a compatible Super I/O chip)
 
 Requires root access and the portio python module (to install run "pip install portio")
+
+## Installation
+
+    sudo cp zenstates.py /usr/local/bin/zenstates.py
+    sudo cp togglecode.py /usr/local/bin/togglecode.py
+    sudo cp disable_c6 /usr/local/bin/disable_c6
+    sudo cp zenstates.service /etc/systemd/system/zenstates.service
+    sudo systemctl daemon-reload
+    sudo systemctl enable zenstates.service
+    sudo systemctl start zenstates.service
+
