@@ -1,2 +1,2 @@
 #!/bin/bash
-zenstates.py --disable-c6
+zenstates.py --c6-disable
